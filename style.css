@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --Green: #006241;
+    --Pink: #b04a5a;
+    --DarkGreen: #1e3932;
+    --Brown: #d69a2d;
+
+    --whiteTextColor: #ffffff;
+    --blackTextColor: #000000DE;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-padding {
+    padding: 7px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.padding-x {
+    padding: 0 16px;
+}
+
+.inner-padding {
+    padding: 32px 16px;
+}
+
+.text-df {
+    font-size: 16px;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+.text-lg {
+    font-size: 28px;
+}
+
+.text-md {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.accordion-h {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.participating-stores br {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .inner-padding {
+        padding: 32px 24px;
+    }
+
+    .text-md {
+        font-size: 24px;
+    }
+
+    .text-df {
+        font-size: 19px;
+    }
+
+    .accordion-h {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-lg {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .inner-padding {
+        padding: 32px 40px;
+    }
+    
+}
+
+@media (min-width: 1280px) {
+    .inner-padding {
+        padding: 32px 48px;
+    }
+
+    .participating-stores br {
+        display: block;
+    }
+}
