@@ -440,6 +440,14 @@ li button:last-child:hover {
     gap: 10px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--DarkGreen), var(--Green), transparent );
+}
+
 @media (min-width: 768px) {
 
     .grid-column-2 {
