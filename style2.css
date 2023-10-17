@@ -36,6 +36,7 @@
     position: absolute;
     display: none;
     transition: .3s ease-in-out;
+    z-index: 2;
 }
 
 .navtoggle.block {
@@ -108,7 +109,7 @@
     line-height: 1.5rem;
     font-size: 19px;
     padding: 24px 0;
-    z-index: 2;
+    /* z-index: 2; */
     /* opacity: 0; */
     transform: translate(100%);
     transition: .3s ease-in-out;
@@ -447,6 +448,67 @@ li button:last-child:hover {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, var(--DarkGreen), var(--Green), transparent );
 }
+
+/* animation */
+
+.lazyLoad {
+    opacity: 0;
+    z-index: 1;
+    filter: blur(4px);
+    transition: .8s ease-in;
+}
+
+.lazyLoad.animation {
+    filter: blur(0);
+    opacity: 1;
+}
+
+.leftToRight {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: .8s ease-in-out;
+}
+
+.leftToRight.animation {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rl-wrap {
+    overflow: hidden;
+}
+
+.rToLeft {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .8s ease-in-out;
+}
+
+.rToLeft.animation {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.stagger:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.stagger:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.stagger:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+.stagger:nth-child(5) {
+    transition-delay: 500ms;
+}
+
+.stagger:nth-child(6) {
+    transition-delay: 600ms;
+}
+
 
 @media (min-width: 768px) {
 

@@ -111,4 +111,31 @@ accordion.forEach((value, index) => {
         arrow[index].classList.toggle('active');
         
     });
-})
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('animation')
+        }
+
+        else {
+            entry.target.classList.remove('animation')
+        }
+    })
+});
+
+const lazyLoad = document.querySelectorAll('.lazyLoad');
+lazyLoad.forEach((el) => {
+    observer.observe(el);
+});
+
+const leftToRight = document.querySelectorAll('.leftToRight');
+leftToRight.forEach((el) => {
+    observer.observe(el);
+});
+
+const rToLeft = document.querySelectorAll('.rToLeft');
+rToLeft.forEach((el) => {
+    observer.observe(el);
+});
