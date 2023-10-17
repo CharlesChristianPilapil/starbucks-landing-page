@@ -509,10 +509,6 @@ li button:last-child:hover {
     transition-delay: 600ms;
 }
 
-.lstagger {
-    color: red;
-}
-
 
 @media (min-width: 768px) {
 

@@ -132,6 +132,7 @@ lazyLoad.forEach((el) => {
 
 const leftToRight = document.querySelectorAll('.leftToRight');
 leftToRight.forEach((el) => {
+    console.log(`check`);
     observer.observe(el);
 });
 
